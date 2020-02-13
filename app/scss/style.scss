@@ -2,6 +2,7 @@
 @import 'fonts';
 @import 'global';
 
+// ----------------------------------header start-------------------------
 .header-top{
   background-color: #eef1f3;
   &__inner{
@@ -137,4 +138,129 @@
   
 }
 
+// ----------------------------------header end-------------------------
 
+// ----------------------------------screen start-------------------------
+.screen{
+  background-color: #2145ca;
+}
+.screen__inner{
+  min-height: 720px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+  text-align: center;
+  &-title{
+    text-align: center;
+    font-size: 60px;
+    line-height: 70px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    span{
+      font-weight: 700;
+      display: block;
+    }
+  }
+  &-text{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 50px;
+  }
+  &-form{
+    transform: translateY(50%);
+    width: 100%;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 6px;
+    position: relative;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.08);
+    z-index: 5;
+    &::after,
+    &::before{
+      content: "";
+      opacity: 0.502;
+      max-width: 1080px;
+      background-color: #fff;
+      border-radius: 6px;
+      height: 135px;
+      position: absolute;
+      z-index: -1;
+      left: 0;
+      right: 0;
+      top: -28px;
+      margin: 0 30px;
+    }
+    &::before{
+      max-width: 1110px;
+      top: -14px;
+      margin: 0 15px;
+    }
+    form{
+      display: flex;
+    }
+    input{
+      padding: 18px 195px 18px 25px;
+      max-width: 805px;
+      width: 100%;
+      border-radius: 6px;
+      border: 1px solid #dcdcdc;
+    }
+    button{
+      padding: 18px 63px;
+      max-width: 220px;
+      width: 100%;
+      border: none;
+      cursor: pointer;
+      background-color: #0674ec;
+      border-radius: 6px;
+      color: #fff;
+      margin-left: 30px;
+    }
+  }
+}
+.screen__inner-bnt{
+  padding: 12px 30px;
+  background-color: transparent;
+  border: 1px solid #fff;
+  margin: 0 15px;
+  border-radius: 30px;
+  font-size: 16px;
+  color: #fff;
+  position: relative;
+}
+.screen__inner-bg{
+  background-color: #fff;
+  color: #0674ec;
+}
+
+// ----------------------------------screen end-------------------------{
+// ----------------------------------features end-------------------------{
+.features{
+  padding: 190px 0 80px;
+}
+.features__inner{
+  display: flex;
+  justify-content: space-between;
+
+  &-item{
+    max-width: 360px;
+    width: 100%;
+    text-align: center;
+    padding: 40px 30px;
+    margin-bottom: 40px;
+  }
+  &-images{
+    margin-bottom: 20px;
+  }
+  &-title{
+    font-size: 24px;
+    color: #000;
+    margin-bottom: 20px;
+  }
+  &-text{
+
+  }
+}
+// ----------------------------------features end-------------------------{
