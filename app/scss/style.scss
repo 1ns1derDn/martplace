@@ -1,0 +1,140 @@
+@import 'vars';
+@import 'fonts';
+@import 'global';
+
+.header-top{
+  background-color: #eef1f3;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+  }
+  &__btn{
+    background-color: #0674ec;
+    text-align: center;
+    font-size: 14px;
+    padding: 5px 18px;
+    border-radius: 50px;
+    color: #fff;
+    margin-right: 35px;
+  }
+  &__box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__alert-item{
+    display: inline-block;
+    margin: 0 15px;
+    position: relative;
+    .header-top__alert-numbers{
+      position: absolute;
+      right: -20px;
+      top: -10px;
+      max-width: 30px;
+      height: 20px;
+      padding: 0px 6px;
+      font-size: 14px;
+      color: #fff;
+      font-weight: 500;
+      border-radius: 12px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .bell-number{
+      background-color: #ff6a6c;
+    }
+    .message-number{
+      background-color: #62d03b;
+    }
+    .shop-number{
+      background-color: #0674ec;
+    }
+  }
+  &__user{
+    display: flex;
+    align-items: center;
+  }
+  &__avatar{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 25px;
+  }
+  &__user-info{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    margin-left: 20px;
+    color: #333333;
+    a{
+      display: block;
+      color: #0674ec;
+      font-size: 15px;
+    }
+  }
+}
+
+.header-menu__inner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+
+.menu{
+  li{
+    display: inline-block;
+    & + li{
+      margin-left: 30px;
+    }
+  }
+  a{
+    color: #333333;
+    font-weight: 500;
+    text-transform: uppercase;
+
+  }
+}
+.header-menu__form{
+  max-width: 360px;
+  width: 100%;
+  position: relative;
+  input{
+    width: 100%;
+    padding: 15px 80px 15px 25px;
+    font-size: 15px;
+    color: #000;
+    border-radius: 30px;
+    border: 1px solid #898f96;
+
+    &::placeholder{
+      color: #898f96;
+    }
+  }
+  button{
+    width: 70px;
+    height: 48px;
+    border-radius: 30px;
+    border: none;
+    background-color: #0674ec;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+    .lnr-magnifier{
+      fill: #fff;
+    }
+  }
+  
+}
+
+
