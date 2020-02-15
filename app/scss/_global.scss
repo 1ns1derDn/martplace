@@ -27,13 +27,147 @@ body{
   padding: 0 15px;
   margin: 0 auto;
 }
-
-.btn{
-  
-}
-
 .lnr{
   width: 20px;
   height: 20px;
   fill: #7e8fa1;
+}
+
+.wordpress{
+  color: #7347c1;
+  padding-left: 20px;
+  position: relative;
+  &::before{
+    content: "";
+    background-image: url(../img/icon-wp.svg);
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+.psd{
+  color: #7347c1;
+  padding-left: 20px;
+  position: relative;
+  &::before{
+    content: "";
+    background-image: url(../img/product/iocn-psd.svg);
+    height: 17px;
+    width: 13px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+.html{
+  color: #7347c1;
+  padding-left: 20px;
+  position: relative;
+  &::before{
+    content: "";
+    background-image: url(../img/product/icon-html.png);
+    height: 17px;
+    width: 15px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.title{
+  font-size: 30px;
+  line-height: 40px;
+  color: #000;
+}
+
+.heart{
+  color: #7347c1;
+  padding-left: 20px;
+  position: relative;
+  &::before{
+    content: "";
+    background-image: url(../img/product/lnr-heart.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 17px;
+    width: 15px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.cart{
+  color: #0674ec;
+  padding-left: 20px;
+  position: relative;
+  &::before{
+    content: "";
+    background-image: url(../img/product/lnr-cart.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 17px;
+    width: 15px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.eye{
+  padding-left: 20px;
+  position: relative;
+  &::before{
+    content: "";
+    background-image: url(../img/lnr-eye.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 17px;
+    width: 15px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.clock{
+  padding-left: 20px;
+  position: relative;
+  &::before{
+    content: "";
+    background-image: url(../img/lnr-clock.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 17px;
+    width: 15px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.bubble{
+  padding-left: 20px;
+  position: relative;
+  &::before{
+    content: "";
+    background-image: url(../img/lnr-bubble.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 17px;
+    width: 15px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 }
