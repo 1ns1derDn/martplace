@@ -12,7 +12,7 @@ $(function(){
     fade: true
   });
   
-  $('.features-slider__inner-stars').rateYo({
+  $('.stars').rateYo({
     rating: 5,
     starWidth: "15px",
     halfStar: true

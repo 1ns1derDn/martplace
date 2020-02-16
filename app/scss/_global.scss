@@ -79,6 +79,10 @@ body{
   }
 }
 
+.stars{
+  margin-left: auto;
+  padding: 0px;
+}
 .title{
   font-size: 30px;
   line-height: 40px;
@@ -129,8 +133,8 @@ body{
     background-image: url(../img/lnr-eye.svg);
     background-position: center;
     background-repeat: no-repeat;
-    height: 17px;
-    width: 15px;
+    height: 20px;
+    width: 20px;
     position: absolute;
     left: 0;
     top: 50%;
@@ -146,8 +150,8 @@ body{
     background-image: url(../img/lnr-clock.svg);
     background-position: center;
     background-repeat: no-repeat;
-    height: 17px;
-    width: 15px;
+    height: 16px;
+    width: 16px;
     position: absolute;
     left: 0;
     top: 50%;
@@ -163,8 +167,8 @@ body{
     background-image: url(../img/lnr-bubble.svg);
     background-position: center;
     background-repeat: no-repeat;
-    height: 17px;
-    width: 15px;
+    height: 20px;
+    width: 20px;
     position: absolute;
     left: 0;
     top: 50%;
