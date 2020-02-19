@@ -6,80 +6,223 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
   <link rel="stylesheet" href="css/libs.min.css">
   <link rel="stylesheet" href="css/style.min.css">
-  <title>Document</title>
+  <title>MartPlace</title>
 </head>
 
 <body>
 
-  <svg style="display: none;">
-    <symbol id="lnr-cart" viewBox="0 0 1024 1024">
-      <title>cart</title>
-      <path class="path1"
-        d="M409.6 1024c-56.464 0-102.4-45.936-102.4-102.4s45.936-102.4 102.4-102.4 102.4 45.936 102.4 102.4-45.936 102.4-102.4 102.4zM409.6 870.4c-28.232 0-51.2 22.968-51.2 51.2s22.968 51.2 51.2 51.2 51.2-22.968 51.2-51.2-22.968-51.2-51.2-51.2z">
-      </path>
-      <path class="path2"
-        d="M768 1024c-56.464 0-102.4-45.936-102.4-102.4s45.936-102.4 102.4-102.4 102.4 45.936 102.4 102.4-45.936 102.4-102.4 102.4zM768 870.4c-28.232 0-51.2 22.968-51.2 51.2s22.968 51.2 51.2 51.2 51.2-22.968 51.2-51.2-22.968-51.2-51.2-51.2z">
-      </path>
-      <path class="path3"
-        d="M898.021 228.688c-12.859-15.181-32.258-23.888-53.221-23.888h-626.846l-5.085-30.506c-6.72-40.315-43.998-71.894-84.869-71.894h-51.2c-14.138 0-25.6 11.462-25.6 25.6s11.462 25.6 25.6 25.6h51.2c15.722 0 31.781 13.603 34.366 29.112l85.566 513.395c6.718 40.314 43.997 71.893 84.867 71.893h512c14.139 0 25.6-11.461 25.6-25.6s-11.461-25.6-25.6-25.6h-512c-15.722 0-31.781-13.603-34.366-29.11l-12.63-75.784 510.206-44.366c39.69-3.451 75.907-36.938 82.458-76.234l34.366-206.194c3.448-20.677-1.952-41.243-14.813-56.424zM862.331 276.694l-34.366 206.194c-2.699 16.186-20.043 32.221-36.39 33.645l-514.214 44.714-50.874-305.246h618.314c5.968 0 10.995 2.054 14.155 5.782 3.157 3.73 4.357 9.024 3.376 14.912z">
-      </path>
-    </symbol>
-  </svg>
-  <svg style="display: none;">
-    <symbol id="lnr-envelope" viewBox="0 0 1024 1024">
-      <title>envelope</title>
-      <path class="path1"
-        d="M896 307.2h-819.2c-42.347 0-76.8 34.453-76.8 76.8v460.8c0 42.349 34.453 76.8 76.8 76.8h819.2c42.349 0 76.8-34.451 76.8-76.8v-460.8c0-42.347-34.451-76.8-76.8-76.8zM896 358.4c1.514 0 2.99 0.158 4.434 0.411l-385.632 257.090c-14.862 9.907-41.938 9.907-56.802 0l-385.634-257.090c1.443-0.253 2.92-0.411 4.434-0.411h819.2zM896 870.4h-819.2c-14.115 0-25.6-11.485-25.6-25.6v-438.566l378.4 252.267c15.925 10.618 36.363 15.925 56.8 15.925s40.877-5.307 56.802-15.925l378.398-252.267v438.566c0 14.115-11.485 25.6-25.6 25.6z">
-      </path>
-    </symbol>
-  </svg>
-  <svg style="display: none;">
-    <symbol id="lnr-alarm" viewBox="0 0 1024 1024">
-      <title>alarm</title>
-      <path class="path1"
-        d="M860.171 773.15c-58.576-44-92.171-111.194-92.171-184.35v-153.6c0-128.661-86.733-237.442-204.798-270.954l-0.002-36.246c0-42.347-34.451-76.8-76.8-76.8-42.347 0-76.8 34.453-76.8 76.8v36.245c-118.067 33.512-204.8 142.294-204.8 270.955v153.6c0 73.157-33.595 140.349-92.171 184.35-8.808 6.616-12.395 18.125-8.907 28.573 3.486 10.448 13.267 17.496 24.283 17.496h232.982c-1.709 8.384-2.587 16.955-2.587 25.581 0 70.579 57.421 128 128 128s128-57.421 128-128c0-8.626-0.878-17.197-2.584-25.581h232.981c11.016 0 20.795-7.046 24.283-17.496s-0.101-21.957-8.909-28.573zM460.8 128c0-14.115 11.485-25.6 25.6-25.6s25.6 11.485 25.6 25.6v26.774c-8.435-0.763-16.97-1.176-25.6-1.176s-17.166 0.413-25.6 1.176v-26.774zM563.2 844.8c0 42.347-34.453 76.8-76.8 76.8s-76.8-34.453-76.8-76.8c0-8.76 1.515-17.411 4.394-25.581h144.813c2.878 8.168 4.394 16.821 4.394 25.581zM191.571 768.019c13.075-15.826 24.437-33.051 33.744-51.27 20.362-39.858 30.685-82.906 30.685-127.949v-153.6c0-127.043 103.357-230.4 230.4-230.4s230.4 103.357 230.4 230.4v153.6c0 45.043 10.323 88.091 30.685 127.949 9.307 18.219 20.669 35.445 33.744 51.27h-589.658z">
-      </path>
-    </symbol>
-  </svg>
   <!-- -------------------------------header start--------------------------------- -->
   <header class="header">
     <div class="header-top">
       <div class="container">
         <div class="header-top__inner">
           <div class="header-top__logo"><a href="#"><img src="img/header-logo.png" alt="logo"></a></div>
+          <ul class="header-top__list">
+            <li><a href="#">Start Selling</a></li>
+            <li><a href="#">Forums</a></li>
+            <li><a href="#">Help</a></li>
+          </ul>
           <div class="header-top__box">
             <a class="header-top__btn" href="#">Become a Seller</a>
             <div class="header-top__alert">
-              <div class="header-top__alert-item">
+              <div class="header-top__alert-item notifications">
                 <div class="header-top__alert-numbers bell-number">25</div>
-                <a href="#"><svg class="lnr lnr-alarm">
+                <a class="bell-number__link" href="#"><svg class="lnr lnr-alarm">
                     <use xlink:href="#lnr-alarm"></use>
-                  </svg></a>
+                  </svg>
+                </a>
+                <div class="notifications__menu">
+                  <div class="notifications__view">
+                    <div class="notifications__title">My Notifications</div>
+                    <div class="notifications__link"><a href="#">View All</a></div>
+                  </div>
+                  <div class="notifications__item">
+                    <div class="notifications__item-images" style="background-image: url(img/author-icon.jpg);"></div>
+                    <div class="notifications__item-info">
+                      <div class="notifications__item-action">
+                        <a href="#" class="notifications__item-name">Anderson</a> added to Favourite <a href="#"
+                          class="action">Marketify Coffee Shop</a>
+                      </div>
+                      <span class="notifications__item-time">Just now</span>
+                    </div>
+                    <div class="notifications__item-icon"><svg class="lnr lnr-heart">
+                        <use xlink:href="#lnr-heart"></use>
+                      </svg></div>
+                  </div>
+                  <div class="notifications__item">
+                    <div class="notifications__item-images" style="background-image: url(img/author-icon.jpg);"></div>
+                    <div class="notifications__item-info">
+                      <div class="notifications__item-action">
+                        <a href="#" class="notifications__item-name">Anderson</a> added to Favourite <a href="#"
+                          class="action">Marketify Coffee Shop</a>
+                      </div>
+                      <span class="notifications__item-time">Just now</span>
+                    </div>
+                    <div class="notifications__item-icon bubble-bg"><svg class="lnr lnr-bubble">
+                        <use xlink:href="#lnr-bubble"></use>
+                      </svg></div>
+                  </div>
+                  <div class="notifications__item">
+                    <div class="notifications__item-images" style="background-image: url(img/author-icon.jpg);"></div>
+                    <div class="notifications__item-info">
+                      <div class="notifications__item-action">
+                        <a href="#" class="notifications__item-name">Anderson</a> added to Favourite <a href="#"
+                          class="action">Marketify Coffee Shop</a>
+                      </div>
+                      <span class="notifications__item-time">Just now</span>
+                    </div>
+                    <div class="notifications__item-icon cart-bg"><svg class="lnr lnr-cart">
+                        <use xlink:href="#lnr-cart"></use>
+                      </svg></div>
+                  </div>
+                  <div class="notifications__item">
+                    <div class="notifications__item-images" style="background-image: url(img/author-icon.jpg);"></div>
+                    <div class="notifications__item-info">
+                      <div class="notifications__item-action">
+                        <a href="#" class="notifications__item-name">Anderson</a> added to Favourite <a href="#"
+                          class="action">Marketify Coffee Shop</a>
+                      </div>
+                      <span class="notifications__item-time">Just now</span>
+                    </div>
+                    <div class="notifications__item-icon star-bg"><svg class="lnr lnr-star">
+                        <use xlink:href="#lnr-star"></use>
+                      </svg></div>
+                  </div>
+                </div>
               </div>
-              <div class="header-top__alert-item">
+              <div class="header-top__alert-item message">
                 <div class="header-top__alert-numbers message-number">6</div>
-                <a href="#"><svg class="lnr lnr-envelope">
+                <a class="message__link" href="#"><svg class="lnr lnr-envelope">
                     <use xlink:href="#lnr-envelope"></use>
                   </svg>
                 </a>
+                <div class="message__menu">
+                  <div class="message__view">
+                    <div class="message__title">My Messages</div>
+                    <div class="message__link"><a href="#">View All</a></div>
+                  </div>
+                  <div class="message__item">
+                    <div class="message__images" style="background-image: url(img/author-icon.jpg);"></div>
+                    <div class="message__info">
+                      <div class="message__name"><a class="message__name-link" href="#">Washim</a>
+                        <span class="message__time">Just now</span>
+                      </div>
+                      <a href="#" class="message__text">Hello John Smith! Nunc placerat id...</a>
+                    </div>
+                  </div>
+                  <div class="message__item">
+                    <div class="message__images" style="background-image: url(img/author-icon.jpg);"></div>
+                    <div class="message__info">
+                      <div class="message__name"><a class="message__name-link" href="#">Washim</a>
+                        <span class="message__time">Just now</span>
+                      </div>
+                      <a href="#" class="message__text">Hello John Smith! Nunc placerat id...</a>
+                    </div>
+                  </div>
+                  <div class="message__item">
+                    <div class="message__images" style="background-image: url(img/author-icon.jpg);"></div>
+                    <div class="message__info">
+                      <div class="message__name"><a class="message__name-link" href="#">Washim</a>
+                        <span class="message__time">Just now</span>
+                      </div>
+                      <a href="#" class="message__text">Hello John Smith! Nunc placerat id...</a>
+                    </div>
+                  </div>
+                  <div class="message__item">
+                    <div class="message__images" style="background-image: url(img/author-icon.jpg);"></div>
+                    <div class="message__info">
+                      <div class="message__name"><a class="message__name-link" href="#">Washim</a>
+                        <span class="message__time">Just now</span>
+                      </div>
+                      <a href="#" class="message__text">Hello John Smith! Nunc placerat id...</a>
+                    </div>
+                  </div>
+                  <div class="message__item">
+                    <div class="message__images" style="background-image: url(img/author-icon.jpg);"></div>
+                    <div class="message__info">
+                      <div class="message__name"><a class="message__name-link" href="#">Washim</a>
+                        <span class="message__time">Just now</span>
+                      </div>
+                      <a href="#" class="message__text">Hello John Smith! Nunc placerat id...</a>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="header-top__alert-item">
+              <div class="header-top__alert-item basket">
                 <div class="header-top__alert-numbers shop-number">2</div>
-                <a href="#"><svg class="lnr lnr-cart">
+                <a class="basket__link" href="#"><svg class="lnr lnr-cart">
                     <use xlink:href="#lnr-cart"></use>
                   </svg>
                 </a>
+                <div class="basket__menu">
+                  <div class="basket__item">
+                    <div class="basket__box">
+                      <a href="#" class="basket__images"></a>
+                      <div class="basket__title">
+                        <div class="basket__name">Finance and Consulting
+                          Business Theme</div>
+                        <a href="#" class="basket__category wordpress">Wordpress</a>
+                      </div>
+                      <div class="basket__delate">
+                        <button type="submit"><svg class="lnr lnr-trash">
+                            <use xlink:href="#lnr-trash"></use>
+                          </svg></button>
+                        <div class="basket__price">$60</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="basket__item">
+                    <div class="basket__box">
+                      <a href="#" class="basket__images"></a>
+                      <div class="basket__title">
+                        <div class="basket__name">Finance and Consulting
+                          Business Theme</div>
+                        <a href="#" class="basket__category wordpress">Wordpress</a>
+                      </div>
+                      <div class="basket__delate">
+                        <button type="submit"><svg class="lnr lnr-trash">
+                            <use xlink:href="#lnr-trash"></use>
+                          </svg></button>
+                        <div class="basket__price">$60</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="basket__btn-title">
+                    <div class="basket__btn-tatal">Total:</div>
+                    <div class="basket__btn-sum">$80</div>
+                  </div>
+                  <div class="basket__box-btn">
+                    <a href="#" class="basket__link-btn" herf="#">Go to Cart</a>
+                    <a href="#" class="basket__link-btn basket__link-checkout" herf="#">Go to Checkout</a>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="header-top__user">
-              <div class="header-top__avatar" style="background-image: url(img/author-icon.jpg);"></div>
-              <div class="header-top__user-info">
-                <a href="#"><span>Taofiq Hakim</span></a>
-                <a href="#">$20.45</a>
+            <a href="#" class="header-top__user">
+              <div class="header-top__user-box">
+                <div class="header-top__avatar" style="background-image: url(img/author-icon.jpg);"></div>
+                <div class="header-top__user-info">
+                  <div class="user-name" href="#"><span>Taofiq Hakim</span></div>
+                  <div class="user-balance" href="#">$20.45</div>
+                </div>
+                <ul class="user__menu">
+                  <li><a href="#"><span class="lnr lnr-user"></span>Profile Page</a></li>
+                  <li><a href="#"><span class="lnr lnr-home"></span>Dashboard</a></li>
+                  <li><a href="#"><span class="lnr lnr-cog"></span>Account Settings</a></li>
+                  <li><a href="#"><span class="lnr lnr-cart"></span>Your Purchases</a></li>
+                  <li><a href="#"><span class="lnr lnr-heart"></span>Your Favorites</a></li>
+                  <li><a href="#"><span class="lnr lnr-dice"></span>Add Credits</a></li>
+                  <li><a href="#"><span class="lnr lnr-chart-bars"></span>Sales Statements</a></li>
+                  <li><a href="#"><span class="lnr lnr-upload"></span>Upload Item</a></li>
+                  <li><a href="#"><span class="lnr lnr-book"></span>Edit Item</a></li>
+                  <li><a href="#"><span class="lnr lnr-briefcase"></span>Withdrawals</a></li>
+                  <li><a href="#"><span class="lnr lnr-enter"></span>Logout</a></li>
+                </ul>
               </div>
-            </div>
+            </a>
           </div>
         </div>
       </div>
@@ -89,11 +232,43 @@
         <div class="header-menu__inner">
           <nav class="menu">
             <ul>
-              <li><a href="#">HOME</a></li>
-              <li><a href="#">all products</a></li>
-              <li><a href="#">wordpress</a></li>
+              <li>
+                <a class="first-drop" href="#">HOME</a>
+                <ul class="first-drop__home drop">
+                  <li><a href="#">Home One Multi User</a></li>
+                  <li><a href="#">Home Two Single User</a></li>
+                  <li><a href="#">Home Three Product</a></li>
+                </ul>
+              </li>
+              <li>
+                <a class="three-drop" href="#">all products</a>
+                <ul class="three-drop__products drop">
+                  <li><a href="#">Recent Items</a></li>
+                  <li><a href="#">Popular Items</a></li>
+                  <li><a href="#">Featured Items</a></li>
+                  <li><a href="#">Free Templates</a></li>
+                  <li><a href="#">Follow Feed</a></li>
+                  <li><a href="#">Top Authors</a></li>
+                </ul>
+              </li>
+              <li>
+                <a class="second-drop" href="#">wordpress</a>
+                <ul class="second-drop__wordpress drop">
+                  <li><a href="#">Popular Items</a></li>
+                  <li><a href="#">Admin Templates</a></li>
+                  <li><a href="#">Blog / Magazine / News</a></li>
+                  <li><a href="#">Creative</a></li>
+                  <li><a href="#">Corporate Business</a></li>
+                  <li><a href="#">Resume Portfolio</a></li>
+                  <li><a href="#">eCommerce</a></li>
+                  <li><a href="#">Entertainment</a></li>
+                  <li><a href="#">Landing Pages</a></li>
+                </ul>
+              </li>
               <li><a href="#">festures</a></li>
-              <li><a href="#">Pages</a></li>
+              <li>
+                <a class="pages" href="#">Pages</a>
+              </li>
             </ul>
           </nav>
           <div class="header-menu__form">
@@ -102,6 +277,82 @@
               <button type="submit"><img src="img/lnr-magnifier.svg" alt=""></use>
                 </svg></button>
             </form>
+          </div>
+
+          <div class="pages__menu">
+            <div class="pages__menu-box">
+              <div class="pages__col-first">
+                <div class="pages__title">
+                  MartPlace Pages
+                </div>
+                <ul>
+                  <li><a href="#">Dashboard</a></li>
+                  <li><a href="#">Dashboard</a></li>
+                  <li><a href="#">Dashboard</a></li>
+                  <li><a href="#">Dashboard</a></li>
+                  <li><a href="#">Dashboard</a></li>
+                  <li><a href="#">Dashboard</a></li>
+                  <li><a href="#">Dashboard</a></li>
+                  <li><a href="#">Dashboard</a></li>
+                  <li><a href="#">Dashboard</a></li>
+                  <li><a href="#">Dashboard</a></li>
+                  <li><a href="#">Dashboard</a></li>
+                  <li><a href="#">Dashboard</a></li>
+                  <li><a href="#">Dashboard</a></li>
+                  <li><a href="#">Dashboard</a></li>
+                  <li><a href="#">Dashboard</a></li>
+                  <li><a href="#">Dashboard</a></li>
+                  <li><a href="#">Dashboard</a></li>
+                  <li><a href="#">Dashboard</a></li>
+                  <li><a href="#">Dashboard</a></li>
+                  <li><a href="#">Dashboard</a></li>
+                </ul>
+              </div>
+              <div class="pages__col-second">
+                <div class="pages__title">
+                  Dashboard
+                </div>
+                <ul>
+                  <li><a href="#">Dashboard</a></li>
+                  <li><a href="#">Dashboard</a></li>
+                  <li><a href="#">Dashboard</a></li>
+                  <li><a href="#">Dashboard</a></li>
+                  <li><a href="#">Dashboard</a></li>
+                  <li><a href="#">Dashboard</a></li>
+                  <li><a href="#">Dashboard</a></li>
+                  <li><a href="#">Dashboard</a></li>
+                  <li><a href="#">Dashboard</a></li>
+                  <li><a href="#">Dashboard</a></li>
+                </ul>
+              </div>
+              <div class="pages__col-three">
+                <div class="pages__title">
+                  Others Pages
+                </div>
+                <ul>
+                  <li><a href="#">Dashboard</a></li>
+                  <li><a href="#">Dashboard</a></li>
+                  <li><a href="#">Dashboard</a></li>
+                  <li><a href="#">Dashboard</a></li>
+                  <li><a href="#">Dashboard</a></li>
+                  <li><a href="#">Dashboard</a></li>
+                  <li><a href="#">Dashboard</a></li>
+                  <li><a href="#">Dashboard</a></li>
+                  <li><a href="#">Dashboard</a></li>
+                  <li><a href="#">Dashboard</a></li>
+                  <li><a href="#">Dashboard</a></li>
+                  <li><a href="#">Dashboard</a></li>
+                  <li><a href="#">Dashboard</a></li>
+                  <li><a href="#">Dashboard</a></li>
+                  <li><a href="#">Dashboard</a></li>
+                  <li><a href="#">Dashboard</a></li>
+                  <li><a href="#">Dashboard</a></li>
+                  <li><a href="#">Dashboard</a></li>
+                  <li><a href="#">Dashboard</a></li>
+                  <li><a href="#">Dashboard</a></li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -818,7 +1069,7 @@
       <div class="news__inner">
 
         <div class="news-item">
-          <div class="news-item__images" style="background-image: url(img/content/product-bg.jpg);"></div>
+          <a href="#" class="news-item__images" style="background-image: url(img/content/product-bg.jpg);"></a>
           <div class="news-item__content">
             <div class="news-item__title">Web Design Trends in 2017</div>
             <div class="news-item__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
@@ -833,7 +1084,7 @@
         </div>
 
         <div class="news-item">
-          <div class="news-item__images" style="background-image: url(img/content/product-bg.jpg);"></div>
+          <a href="#" class="news-item__images" style="background-image: url(img/content/product-bg.jpg);"></a>
           <div class="news-item__content">
             <div class="news-item__title">Web Design Trends in 2017</div>
             <div class="news-item__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
@@ -848,7 +1099,7 @@
         </div>
 
         <div class="news-item">
-          <div class="news-item__images" style="background-image: url(img/content/product-bg.jpg);"></div>
+          <a href="#" class="news-item__images" style="background-image: url(img/content/product-bg.jpg);"></a>
           <div class="news-item__content">
             <div class="news-item__title">Web Design Trends in 2017</div>
             <div class="news-item__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
@@ -902,7 +1153,8 @@
               scel erisque the mattis, leo quam.</div>
             <div class="footer-top__col-info footer-phone"><a href="tel:67898752235">Phone: +6789-875-2235</a></div>
             <div class="footer-top__col-info footer-mail"><a href="#">support@aazztech.com</a></div>
-            <div class="footer-top__col-info footer-map"><a href="#">202 New Hampshire Avenue Northwest #100, New York-2573</a></div>
+            <div class="footer-top__col-info footer-map"><a href="#">202 New Hampshire Avenue Northwest #100, New
+                York-2573</a></div>
           </div>
           <div class="footer-top__col footer-top__colmin">
             <div class="footer-top__title">Our Company</div>
@@ -959,8 +1211,10 @@
     </div>
   </section>
   <!-- -------------------------------footer end--------------------------------- -->
+  <script src="https://cdn.linearicons.com/free/1.0.0/svgembedder.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="js/libs.min.js"></script>
   <script src="js/main.js"></script>
 </body>
+
 </html>
