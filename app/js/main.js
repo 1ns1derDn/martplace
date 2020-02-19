@@ -107,4 +107,12 @@ $(function(){
     $('.header-top__user').addClass('active');
     }
   });
+
+  $('.menu__btn').on('click', function(){
+    $('.menu').slideToggle();
+  });
+
+  $('.user-btn').on('click', function(){
+    $('.header-top__box-mobale').slideToggle();
+  });
 });
