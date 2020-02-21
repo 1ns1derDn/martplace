@@ -2297,6 +2297,28 @@
 }
 //----------------------------------terms end-------------------------
 //----------------------------------page-terms end-------------------------
+//----------------------------------page-error start-------------------------
+.error{
+  text-align: center;
+  padding: 80px 0 100px;
+}
+.error__images{
+  margin-bottom: 30px;
+}
+.error__text{
+  font-size: 30px;
+  color: #000;
+  margin-bottom: 40px;
+}
+.error__btn{
+  color: #fff;
+  background-color: #0674ec;
+  max-width: 195px;
+  padding: 13px 40px;
+  border-radius: 50px;
+  box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+}
+//----------------------------------page-error end-------------------------
 
 
 
