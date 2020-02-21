@@ -2154,6 +2154,120 @@
 }
 //----------------------------------products-items end-------------------------
 //----------------------------------page-item end-------------------------
+//----------------------------------picing-plan strat-------------------------
+.breadcrumbs-plan{
+  .breadcrumbs{
+    background: rgb(79,39,151);
+    background: linear-gradient(90deg, rgba(79,39,151,1) 0%, rgba(53,51,186,1) 50%, rgba(22,66,229,1) 100%);
+  }
+  .breadcrumbs__inner{
+    padding: 55px 0;
+  }
+  .breadcrumbs__list{
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  .breadcrumbs__title{
+    font-size: 30px;
+    color: #fff;
+    font-weight: 500;
+  }
+}
+//----------------------------------plan start-------------------------
+.plan{
+  background-color: #eff1f5;
+  padding: 120px 0;
+}
+.plan__title{
+  font-size: 36px;
+  color: #000;
+  max-width: 420px;
+  margin: 0 auto 20px;
+  text-align: center;
+  span{
+    color: #0674ec;
+  }
+}
+.plan__text{
+  color: #555;
+  font-size: 16px;
+  max-width: 680px;
+  margin: 0 auto 55px;
+  text-align: center;
+}
+.plan__inner{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.plan__item{
+  width: 361px;
+  padding: 0 30px 30px;
+  background-color: #fff;
+  border-radius: 4px;
+  border-top: 3px solid #ff6a6c;
+}
+.plan__item-title{
+  font-size: 24px;
+  font-weight: 500;
+  color: #000;
+  text-align: center;
+  padding: 19px 0;
+  border-bottom: 1px solid #e8ebf0;
+}
+.plan__item-price{
+  font-size: 36px;
+  color: #000;
+  text-align: center;
+  padding: 25px 0;
+  span{
+    font-size: 15px;
+    color: #555;
+  }
+  sup{
+    font-size: 18px;
+  }
+}
+.plan__item-list{
+  ul{
+    list-style: disc;
+    list-style-position: inside;
+    margin-bottom: 20px;
+  }
+  li{
+    margin-bottom: 8px;
+  }
+  span{
+    font-weight: 500;
+    color: #000;
+  }
+}
+.plan__item-btn{
+  width: 100%;
+  font-size: 18px;
+  line-height: 28px;
+  color: #fff;
+  background-color: #ff6a6c;
+  border-radius: 4px;
+  box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+  text-align: center;
+  padding: 13px 0;
+}
+.plan__item-blue{
+  border-top-color: #0674ec;
+  &.plan__item-btn{
+    background-color: #0674ec;
+  }
+}
+.plan__item-orange{
+  border-top-color: #feb71d;
+  &.plan__item-btn{
+    background-color: #feb71d;
+  }
+}
+//----------------------------------plan end-------------------------
+//----------------------------------picing-plan end-------------------------
+
 
 
 
