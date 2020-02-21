@@ -15,7 +15,8 @@ $(function(){
   $('.stars').rateYo({
     rating: 5,
     starWidth: "15px",
-    halfStar: true
+    halfStar: true,
+    spacing: "3px"
   });
 
   $('.bell-number__link').on('click', function(){
@@ -114,5 +115,14 @@ $(function(){
 
   $('.user-btn').on('click', function(){
     $('.header-top__box-mobale').slideToggle();
+  });
+
+  $(".js-range-slider").ionRangeSlider({
+    type: "double",
+    min: 0,
+    max: 400,
+    from: 30,
+    to: 300,
+    prefix: "$"
   });
 });

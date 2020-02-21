@@ -193,3 +193,31 @@ body{
   color: #7e8fa1;
   font-size: 20px;
 }
+
+.breadcrumbs{
+  &__list{
+    text-align: center;
+    li{
+      display: inline-block;
+      position: relative;
+      & + li{
+        padding-left: 24px;
+        &::before{
+          content: "/";
+          position: absolute;
+          color: #fff;
+          left: 8px;
+        }
+      }
+      &:last-child{
+        a,
+        span{
+          color: #bfcad7;
+        }
+      }
+    }
+    a{
+      color: #fff;
+    }
+  }
+}
