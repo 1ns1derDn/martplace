@@ -2297,6 +2297,7 @@
 }
 //----------------------------------terms end-------------------------
 //----------------------------------page-terms end-------------------------
+
 //----------------------------------page-error start-------------------------
 .error{
   text-align: center;
@@ -2319,6 +2320,73 @@
   box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
 }
 //----------------------------------page-error end-------------------------
+//----------------------------------page how-works start-------------------------
+.screen-work{
+  background: rgb(79,39,151);
+  background: linear-gradient(90deg, rgba(79,39,151,1) 0%, rgba(53,51,186,1) 50%, rgba(22,66,229,1) 100%);
+  padding: 80px 0 30px;
+}
+.screen-work__title{
+  max-width: 420px;
+  font-size: 30px;
+  line-height: 50px;
+  color: #fff;
+  font-weight: 500;
+  text-align: center;
+  margin: 0 auto 40px;
+  span{
+    font-weight: 300;
+  }
+}
+
+.how-work__item{
+  padding: 100px 0 80px;
+}
+.how-work__inner{
+  display: flex;
+  justify-content: space-between;
+}
+.how-work__images{
+  img{
+    max-width: 100%;
+  }
+}
+.how-work__box{
+  max-width: 457px;
+}
+.how-work__title{
+  font-size: 30px;
+  color: #000;
+  margin-bottom: 25px;
+}
+.how-work__text{
+  margin-bottom: 25px;
+}
+.how-work__btn{
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.1);
+  width: 170px;
+  border-radius: 50px;
+  padding: 10px 20px;
+  text-align: center;
+  color: #0674ec;
+  transition: all linear .3s;
+  &:hover{
+    color: #fff;
+    background-color: #0674ec;
+  }
+}
+.how-work__item-black{
+  background-color: #eff1f5;
+  .how-work__box{
+    order: 1;
+  }
+  .how-work__images{
+    order: 2;
+  }
+}
+
+//----------------------------------page how-works end-------------------------
 
 
 
