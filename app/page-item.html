@@ -437,7 +437,7 @@
         <div class="container">
           <div class="item-panel__inner">
             <div class="item-panel__box-left">
-              <button>New Products</button>
+              <button class="active">New Products</button>
               <button>Popular Products</button>
             </div>
 
@@ -456,11 +456,11 @@
 
             <div class="item-panel__box-right">
               <button>
-                <svg class="lnr grid active">
+                <svg class="item-grid-button active lnr grid">
                   <use xlink:href="#grid"></use>
               </button>
               <button>
-                <svg class="lnr list">
+                <svg class="item-list-button lnr list">
                   <use xlink:href="#list"></use>
               </button>
             </div>
@@ -526,130 +526,329 @@
                 <div class="product-item">
                   <a href="#" class="product-item__images" style="background-image: url(img/content/product-bg.jpg);">
                   </a>
-                  <div class="product-item__content">
-                    <div class="product-item__title">Finance and Consulting
-                      Business Theme</div>
-                    <div class="product-item__wrapper">
-                      <div class="product-item__avatar" style="background-image: url();"></div>
-                      <a href="#" class="product-item__name">Theme-Valley</a>
+                  <div class="product-items__inner-grid">
+                    <div class="product-item__content">
+                      <div class="product-item__title">Finance and Consulting
+                        Business Theme</div>
+                      <div class="product-item__wrapper">
+                        <div class="product-item__avatar" style="background-image: url();"></div>
+                        <a href="#" class="product-item__name">Theme-Valley</a>
+                      </div>
+                      <div class="product-item__box">
+                        <div class="stars"></div>
+                        <a href="#" class="product-item__shop cart">246</a>
+                      </div>
                     </div>
-                    <div class="product-item__box">
-                      <div class="stars"></div>
-                      <a href="#" class="product-item__shop cart">246</a>
+                    <div class="product-item__footer">
+                      <a href="#" class="product-item__price">$20</a>
+                      <a class="wordpress" href="#">wordpress</a>
                     </div>
                   </div>
-                  <div class="product-item__footer">
-                    <a href="#" class="product-item__price">$20</a>
-                    <a class="wordpress" href="#">wordpress</a>
+                  <div class="product-items__inner-list product-list">
+                    <div class="product-list__box-one">
+                      <div class="product-list__title">
+                        Best YouTube Channels For UI/UX Designers
+                      </div>
+                      <div class="product-list__text">
+                        Nunc placerat mi id nisi inter dum mollis. Praesent phare...
+                      </div>
+                      <a href="#" class="wordpress">wordpress</a>
+                    </div>
+                    <div class="product-list__box-two">
+                      <div class="product-item__wrapper">
+                        <div class="product-item__avatar" style="background-image: url();"></div>
+                        <a href="#" class="product-item__name">Theme-Valley</a>
+                      </div>
+                      <div class="product-list__like heart">
+                        <span>90</span> loves
+                      </div>
+                      <a href="#" class="product-list__comment bubble">
+                        <span>90</span> Comments
+                      </a>
+                      <div class="stars-box">
+                        <div class="stars"></div><span>(34)</span>
+                      </div>
+                    </div>
+                    <div class="product-list__box-three">
+                      <a href="#" class="product-item__price">$10 - $50</a>
+                      <div class="product-list__basket cart">829</div>
+                    </div>
                   </div>
                 </div>
 
                 <div class="product-item">
                   <a href="#" class="product-item__images" style="background-image: url(img/content/product-bg.jpg);">
                   </a>
-                  <div class="product-item__content">
-                    <div class="product-item__title">Finance and Consulting
-                      Business Theme</div>
-                    <div class="product-item__wrapper">
-                      <div class="product-item__avatar" style="background-image: url();"></div>
-                      <a href="#" class="product-item__name">Theme-Valley</a>
+                  <div class="product-items__inner-grid">
+                    <div class="product-item__content">
+                      <div class="product-item__title">Finance and Consulting
+                        Business Theme</div>
+                      <div class="product-item__wrapper">
+                        <div class="product-item__avatar" style="background-image: url();"></div>
+                        <a href="#" class="product-item__name">Theme-Valley</a>
+                      </div>
+                      <div class="product-item__box">
+                        <div class="stars"></div>
+                        <a href="#" class="product-item__shop cart">246</a>
+                      </div>
                     </div>
-                    <div class="product-item__box">
-                      <div class="stars"></div>
-                      <a href="#" class="product-item__shop cart">246</a>
+                    <div class="product-item__footer">
+                      <a href="#" class="product-item__price">$20</a>
+                      <a class="wordpress" href="#">wordpress</a>
                     </div>
                   </div>
-                  <div class="product-item__footer">
-                    <a href="#" class="product-item__price">$20</a>
-                    <a class="wordpress" href="#">wordpress</a>
+                  <div class="product-items__inner-list product-list">
+                    <div class="product-list__box-one">
+                      <div class="product-list__title">
+                        Best YouTube Channels For UI/UX Designers
+                      </div>
+                      <div class="product-list__text">
+                        Nunc placerat mi id nisi inter dum mollis. Praesent phare...
+                      </div>
+                      <a href="#" class="wordpress">wordpress</a>
+                    </div>
+                    <div class="product-list__box-two">
+                      <div class="product-item__wrapper">
+                        <div class="product-item__avatar" style="background-image: url();"></div>
+                        <a href="#" class="product-item__name">Theme-Valley</a>
+                      </div>
+                      <div class="product-list__like heart">
+                        <span>90</span> loves
+                      </div>
+                      <a href="#" class="product-list__comment bubble">
+                        <span>90</span> Comments
+                      </a>
+                      <div class="stars-box">
+                        <div class="stars"></div><span>(34)</span>
+                      </div>
+                    </div>
+                    <div class="product-list__box-three">
+                      <a href="#" class="product-item__price">$10 - $50</a>
+                      <div class="product-list__basket cart">829</div>
+                    </div>
                   </div>
                 </div>
 
                 <div class="product-item">
                   <a href="#" class="product-item__images" style="background-image: url(img/content/product-bg.jpg);">
                   </a>
-                  <div class="product-item__content">
-                    <div class="product-item__title">Finance and Consulting
-                      Business Theme</div>
-                    <div class="product-item__wrapper">
-                      <div class="product-item__avatar" style="background-image: url();"></div>
-                      <a href="#" class="product-item__name">Theme-Valley</a>
+                  <div class="product-items__inner-grid">
+                    <div class="product-item__content">
+                      <div class="product-item__title">Finance and Consulting
+                        Business Theme</div>
+                      <div class="product-item__wrapper">
+                        <div class="product-item__avatar" style="background-image: url();"></div>
+                        <a href="#" class="product-item__name">Theme-Valley</a>
+                      </div>
+                      <div class="product-item__box">
+                        <div class="stars"></div>
+                        <a href="#" class="product-item__shop cart">246</a>
+                      </div>
                     </div>
-                    <div class="product-item__box">
-                      <div class="stars"></div>
-                      <a href="#" class="product-item__shop cart">246</a>
+                    <div class="product-item__footer">
+                      <a href="#" class="product-item__price">$20</a>
+                      <a class="wordpress" href="#">wordpress</a>
                     </div>
                   </div>
-                  <div class="product-item__footer">
-                    <a href="#" class="product-item__price">$20</a>
-                    <a class="wordpress" href="#">wordpress</a>
+                  <div class="product-items__inner-list product-list">
+                    <div class="product-list__box-one">
+                      <div class="product-list__title">
+                        Best YouTube Channels For UI/UX Designers
+                      </div>
+                      <div class="product-list__text">
+                        Nunc placerat mi id nisi inter dum mollis. Praesent phare...
+                      </div>
+                      <a href="#" class="wordpress">wordpress</a>
+                    </div>
+                    <div class="product-list__box-two">
+                      <div class="product-item__wrapper">
+                        <div class="product-item__avatar" style="background-image: url();"></div>
+                        <a href="#" class="product-item__name">Theme-Valley</a>
+                      </div>
+                      <div class="product-list__like heart">
+                        <span>90</span> loves
+                      </div>
+                      <a href="#" class="product-list__comment bubble">
+                        <span>90</span> Comments
+                      </a>
+                      <div class="stars-box">
+                        <div class="stars"></div><span>(34)</span>
+                      </div>
+                    </div>
+                    <div class="product-list__box-three">
+                      <a href="#" class="product-item__price">$10 - $50</a>
+                      <div class="product-list__basket cart">829</div>
+                    </div>
                   </div>
                 </div>
+
+
                 <div class="product-item">
                   <a href="#" class="product-item__images" style="background-image: url(img/content/product-bg.jpg);">
                   </a>
-                  <div class="product-item__content">
-                    <div class="product-item__title">Finance and Consulting
-                      Business Theme</div>
-                    <div class="product-item__wrapper">
-                      <div class="product-item__avatar" style="background-image: url();"></div>
-                      <a href="#" class="product-item__name">Theme-Valley</a>
+                  <div class="product-items__inner-grid">
+                    <div class="product-item__content">
+                      <div class="product-item__title">Finance and Consulting
+                        Business Theme</div>
+                      <div class="product-item__wrapper">
+                        <div class="product-item__avatar" style="background-image: url();"></div>
+                        <a href="#" class="product-item__name">Theme-Valley</a>
+                      </div>
+                      <div class="product-item__box">
+                        <div class="stars"></div>
+                        <a href="#" class="product-item__shop cart">246</a>
+                      </div>
                     </div>
-                    <div class="product-item__box">
-                      <div class="stars"></div>
-                      <a href="#" class="product-item__shop cart">246</a>
+                    <div class="product-item__footer">
+                      <a href="#" class="product-item__price">$20</a>
+                      <a class="wordpress" href="#">wordpress</a>
                     </div>
                   </div>
-                  <div class="product-item__footer">
-                    <a href="#" class="product-item__price">$20</a>
-                    <a class="wordpress" href="#">wordpress</a>
+                  <div class="product-items__inner-list product-list">
+                    <div class="product-list__box-one">
+                      <div class="product-list__title">
+                        Best YouTube Channels For UI/UX Designers
+                      </div>
+                      <div class="product-list__text">
+                        Nunc placerat mi id nisi inter dum mollis. Praesent phare...
+                      </div>
+                      <a href="#" class="wordpress">wordpress</a>
+                    </div>
+                    <div class="product-list__box-two">
+                      <div class="product-item__wrapper">
+                        <div class="product-item__avatar" style="background-image: url();"></div>
+                        <a href="#" class="product-item__name">Theme-Valley</a>
+                      </div>
+                      <div class="product-list__like heart">
+                        <span>90</span> loves
+                      </div>
+                      <a href="#" class="product-list__comment bubble">
+                        <span>90</span> Comments
+                      </a>
+                      <div class="stars-box">
+                        <div class="stars"></div><span>(34)</span>
+                      </div>
+                    </div>
+                    <div class="product-list__box-three">
+                      <a href="#" class="product-item__price">$10 - $50</a>
+                      <div class="product-list__basket cart">829</div>
+                    </div>
                   </div>
                 </div>
+
+
                 <div class="product-item">
                   <a href="#" class="product-item__images" style="background-image: url(img/content/product-bg.jpg);">
                   </a>
-                  <div class="product-item__content">
-                    <div class="product-item__title">Finance and Consulting
-                      Business Theme</div>
-                    <div class="product-item__wrapper">
-                      <div class="product-item__avatar" style="background-image: url();"></div>
-                      <a href="#" class="product-item__name">Theme-Valley</a>
+                  <div class="product-items__inner-grid">
+                    <div class="product-item__content">
+                      <div class="product-item__title">Finance and Consulting
+                        Business Theme</div>
+                      <div class="product-item__wrapper">
+                        <div class="product-item__avatar" style="background-image: url();"></div>
+                        <a href="#" class="product-item__name">Theme-Valley</a>
+                      </div>
+                      <div class="product-item__box">
+                        <div class="stars"></div>
+                        <a href="#" class="product-item__shop cart">246</a>
+                      </div>
                     </div>
-                    <div class="product-item__box">
-                      <div class="stars"></div>
-                      <a href="#" class="product-item__shop cart">246</a>
+                    <div class="product-item__footer">
+                      <a href="#" class="product-item__price">$20</a>
+                      <a class="wordpress" href="#">wordpress</a>
                     </div>
                   </div>
-                  <div class="product-item__footer">
-                    <a href="#" class="product-item__price">$20</a>
-                    <a class="wordpress" href="#">wordpress</a>
+                  <div class="product-items__inner-list product-list">
+                    <div class="product-list__box-one">
+                      <div class="product-list__title">
+                        Best YouTube Channels For UI/UX Designers
+                      </div>
+                      <div class="product-list__text">
+                        Nunc placerat mi id nisi inter dum mollis. Praesent phare...
+                      </div>
+                      <a href="#" class="wordpress">wordpress</a>
+                    </div>
+                    <div class="product-list__box-two">
+                      <div class="product-item__wrapper">
+                        <div class="product-item__avatar" style="background-image: url();"></div>
+                        <a href="#" class="product-item__name">Theme-Valley</a>
+                      </div>
+                      <div class="product-list__like heart">
+                        <span>90</span> loves
+                      </div>
+                      <a href="#" class="product-list__comment bubble">
+                        <span>90</span> Comments
+                      </a>
+                      <div class="stars-box">
+                        <div class="stars"></div><span>(34)</span>
+                      </div>
+                    </div>
+                    <div class="product-list__box-three">
+                      <a href="#" class="product-item__price">$10 - $50</a>
+                      <div class="product-list__basket cart">829</div>
+                    </div>
                   </div>
                 </div>
+
                 <div class="product-item">
                   <a href="#" class="product-item__images" style="background-image: url(img/content/product-bg.jpg);">
                   </a>
-                  <div class="product-item__content">
-                    <div class="product-item__title">Finance and Consulting
-                      Business Theme</div>
-                    <div class="product-item__wrapper">
-                      <div class="product-item__avatar" style="background-image: url();"></div>
-                      <a href="#" class="product-item__name">Theme-Valley</a>
+                  <div class="product-items__inner-grid">
+                    <div class="product-item__content">
+                      <div class="product-item__title">Finance and Consulting
+                        Business Theme</div>
+                      <div class="product-item__wrapper">
+                        <div class="product-item__avatar" style="background-image: url();"></div>
+                        <a href="#" class="product-item__name">Theme-Valley</a>
+                      </div>
+                      <div class="product-item__box">
+                        <div class="stars"></div>
+                        <a href="#" class="product-item__shop cart">246</a>
+                      </div>
                     </div>
-                    <div class="product-item__box">
-                      <div class="stars"></div>
-                      <a href="#" class="product-item__shop cart">246</a>
+                    <div class="product-item__footer">
+                      <a href="#" class="product-item__price">$20</a>
+                      <a class="wordpress" href="#">wordpress</a>
                     </div>
                   </div>
-                  <div class="product-item__footer">
-                    <a href="#" class="product-item__price">$20</a>
-                    <a class="wordpress" href="#">wordpress</a>
+                  <div class="product-items__inner-list product-list">
+                    <div class="product-list__box-one">
+                      <div class="product-list__title">
+                        Best YouTube Channels For UI/UX Designers
+                      </div>
+                      <div class="product-list__text">
+                        Nunc placerat mi id nisi inter dum mollis. Praesent phare...
+                      </div>
+                      <a href="#" class="wordpress">wordpress</a>
+                    </div>
+                    <div class="product-list__box-two">
+                      <div class="product-item__wrapper">
+                        <div class="product-item__avatar" style="background-image: url();"></div>
+                        <a href="#" class="product-item__name">Theme-Valley</a>
+                      </div>
+                      <div class="product-list__like heart">
+                        <span>90</span> loves
+                      </div>
+                      <a href="#" class="product-list__comment bubble">
+                        <span>90</span> Comments
+                      </a>
+                      <div class="stars-box">
+                        <div class="stars"></div><span>(34)</span>
+                      </div>
+                    </div>
+                    <div class="product-list__box-three">
+                      <a href="#" class="product-item__price">$10 - $50</a>
+                      <div class="product-list__basket cart">829</div>
+                    </div>
                   </div>
                 </div>
               </div>
 
               <div class="pagenation">
                 <a href="" class="pagenation__prev">
-                  <svg class="lnr lnr-arrow-left"><use xlink:href="#lnr-arrow-left"></use></svg>
+                  <svg class="lnr lnr-arrow-left">
+                    <use xlink:href="#lnr-arrow-left"></use>
+                  </svg>
                 </a>
                 <ul class="pagenation__list">
                   <li><a class="active" href="#">1</a></li>
@@ -658,7 +857,9 @@
                   <li><a href="#">8</a></li>
                 </ul>
                 <a href="" class="pagenation__next">
-                  <svg class="lnr lnr-arrow-right"><use xlink:href="#lnr-arrow-right"></use></svg>
+                  <svg class="lnr lnr-arrow-right">
+                    <use xlink:href="#lnr-arrow-right"></use>
+                  </svg>
                 </a>
               </div>
             </div>
