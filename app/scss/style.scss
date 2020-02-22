@@ -2582,11 +2582,15 @@
 //----------------------------------page blog end-------------------------
 
 //----------------------------------page recover-password start-------------------------
-.recover-password{
+.recover-password,
+.register,
+.login{
   background-color: #eff1f5;
   padding: 70px 0 120px;
 }
-.recover-password__inner{
+.recover-password__inner,
+.register__inner,
+.login__inner{
   max-width: 555px;
   width: 100%;
   background-color: #fff;
@@ -2623,6 +2627,7 @@
     padding: 0 25px;
     border-radius: 50px;
     box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
   }
 }
 .recover-password__form-title{
@@ -2633,7 +2638,135 @@
 
 //----------------------------------page recover-password end-------------------------
 
+//----------------------------------page register start-------------------------
+.register__top,
+.login__top{
+  padding: 60px 64px 30px;
+  text-align: center;
+  border-bottom: 1px solid #e8ebf0;
+}
+.register__title,
+.login__title{
+  font-size: 26px;
+  color: #000;
+  margin-bottom: 18px;
+}
+.register-from{
+  padding: 25px 50px 55px;
+  input{
+    padding: 15px 20px;
+    width: 100%;
+    font-size: 16px;
+    color: #000;
+    background-color: #f4f5f8;
+    border: none;
+    margin-bottom: 20px;
+    &::placeholder{
+      color: #898f96;
+    }
+  }
+  button{
+    border: none;
+    text-align: center;
+    display: block;
+    background-color: #0674ec;
+    color: #fff;
+    width: 192px;
+    height: 50px;
+    padding: 0 25px;
+    border-radius: 50px;
+    box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+    margin-bottom: 40px;
+    cursor: pointer;
+  }
+  a{
+    color: #0674ec;
+  }
+}
+.register-from__title,
+.login-from__title{
+  line-height: 26px;
+  font-weight: 500;
+  color: #000;
+  margin-bottom: 5px;
+}
 
+//----------------------------------page register end-------------------------
+//----------------------------------page login start-------------------------
+.login-from{
+  padding: 25px 50px 55px;
+  input{
+    padding: 15px 20px;
+    width: 100%;
+    font-size: 16px;
+    color: #000;
+    background-color: #f4f5f8;
+    border: none;
+    margin-bottom: 20px;
+    &::placeholder{
+      color: #898f96;
+    }
+  }
+  span{
+    margin-left: 15px;
+  }
+  button{
+    border: none;
+    text-align: center;
+    display: block;
+    background-color: #0674ec;
+    color: #fff;
+    width: 192px;
+    height: 50px;
+    padding: 0 25px;
+    border-radius: 50px;
+    box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+    margin-bottom: 40px;
+    cursor: pointer;
+  }
+  a{
+    color: #0674ec;
+  }
+  .jq-checkbox{
+    border-radius: 50%;
+  }
+  .jq-checkbox, .jq-radio {
+    vertical-align: -4px;
+    width: 20px;
+    height: 20px;
+    margin: 0 4px 0 0;
+    border: 1px solid #C3C3C3;
+    background: linear-gradient(#FFF,#E6E6E6);
+    box-shadow: 0 1px 1px rgba(0,0,0,.05), inset -1px -1px #FFF, inset 1px -1px #FFF;
+    cursor: pointer;
+  }
+  .jq-checkbox.checked .jq-checkbox__div{
+    width: 8px;
+    height: 4px;
+    margin: 7px 0 0 6px;
+    border-bottom: 2px solid #fff;
+    border-left: 2px solid #fff;
+    -webkit-transform: rotate(-50deg);
+    transform: rotate(-50deg);
+  }
+  .jq-checkbox.checked.focused{
+    background: #0674ec;
+    border: none;
+    box-shadow: none;
+  }
+  .jq-checkbox.checked{
+    background: #0674ec;
+    border: none;
+    box-shadow: none;
+  }
+}
+.login-from__text{
+  display: flex;
+  justify-content: space-between;
+}
+//----------------------------------page login end-------------------------
 
 
 

@@ -1,4 +1,7 @@
 $(function(){
+
+  $('input, select').styler();
+
   $('.products-slider__inner').slick({
     appendArrows: $('.products-slider__btn'),
     arrows: true,
