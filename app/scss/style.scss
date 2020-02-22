@@ -2581,6 +2581,58 @@
 }
 //----------------------------------page blog end-------------------------
 
+//----------------------------------page recover-password start-------------------------
+.recover-password{
+  background-color: #eff1f5;
+  padding: 70px 0 120px;
+}
+.recover-password__inner{
+  max-width: 555px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 4px;
+  margin: 0 auto;
+  box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+}
+.recover-password__text{
+  padding: 60px 46px 30px 50px;
+  border-bottom: 1px solid #e8ebf0;
+}
+.recover-password__form{
+  padding: 35px 46px 55px 50px;
+  input{
+    padding: 15px 20px;
+    width: 100%;
+    font-size: 16px;
+    color: #000;
+    background-color: #f4f5f8;
+    border: none;
+    margin-bottom: 30px;
+    &::placeholder{
+      color: #898f96;
+    }
+  }
+  button{
+    border: none;
+    text-align: center;
+    display: block;
+    background-color: #0674ec;
+    color: #fff;
+    width: 192px;
+    height: 50px;
+    padding: 0 25px;
+    border-radius: 50px;
+    box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.1);
+  }
+}
+.recover-password__form-title{
+  color: #000;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+//----------------------------------page recover-password end-------------------------
+
 
 
 
