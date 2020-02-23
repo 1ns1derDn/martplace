@@ -2767,6 +2767,144 @@
   justify-content: space-between;
 }
 //----------------------------------page login end-------------------------
+//----------------------------------page cantact start-------------------------
+.contact-banner{
+  background: rgb(103,30,144);
+  background: linear-gradient(90deg, rgba(103,30,144,1) 0%, rgba(60,42,179,1) 50%, rgba(12,55,218,1) 100%);
+  padding: 90px 0 80px;
+}
+.contact-banner__inner{
+  text-align: center;
+  color: #fff;
+  max-width: 360px;
+  margin: 0 auto;
+}
+.contact-banner__title{
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 25px;
+}
+.contact-banner__text{
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.contact{
+  padding: 120px 0;
+  background-color: #eff1f5;
+}
+.contact__title{
+  max-width: 751px;
+  margin: 0 auto 25px;
+  font-size: 36px;
+  text-align: center;
+  span{
+    color: #0674ec;
+  }
+}
+.contact__item-info{
+  a{
+    color: #333;
+    display: block;
+  }
+}
+.contact__text{
+  max-width: 751px;
+  margin: 0 auto 50px;
+  text-align: center;
+}
+.contact__inner{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.contact__item{
+  padding: 50px 50px 35px;
+  max-width: 361px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  span{
+    color: #0674ec;
+    font-size: 48px;
+    margin-bottom: 40px;
+  }
+}
+.contact__item__title{
+  color: #000;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 25px;
+}
+.contact__item-info{
+  margin-bottom: 10px;
+}
+.contact-box{
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+.contact-box__title{
+  font-size: 24px;
+  color: #000;
+  text-align: center;
+  padding: 50px 195px 40px;
+  border-bottom: 1px solid #e7e7e7;
+}
+.contact-box__form{
+  padding: 40px 195px 50px;
+  .contact-box__wrapper{
+    display: flex;
+    justify-content: space-between;
+  }
+  input{
+    padding: 15px 20px;
+    max-width: 361px;
+    width: 100%;
+    font-size: 16px;
+    color: #000;
+    border: 1px solid #e7e7e7;
+    margin-bottom: 30px;
+    &::placeholder{
+      color: #898f96;
+    }
+  }
+  textarea{
+    border: 1px solid #e7e7e7;
+    height: 134px;
+    width: 100%;
+    padding: 20px;
+    resize: none;
+    margin-bottom: 30px;
+    &::placeholder{
+      color: #898f96;
+    }
+  }
+  button{
+    border: none;
+    text-align: center;
+    display: block;
+    background-color: #0674ec;
+    color: #fff;
+    width: 170px;
+    height: 50px;
+    padding: 0 25px;
+    border-radius: 50px;
+    box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.1);
+    margin: 0 auto 40px;
+    cursor: pointer;
+  }
+}
+.contact__map{
+  iframe{
+    width: 100%;
+    height: 400px;
+    display: block;
+  }
+}
+//----------------------------------page cantact end-------------------------
 
 
 
