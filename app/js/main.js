@@ -34,6 +34,18 @@ $(function(){
     $('.item-grid-button').addClass('active');
   });
 
+  $('.item-list-button').on('click', function(){
+    $('.favorites__inner .product-item').addClass('list');
+    $('.item-grid-button').removeClass('active');
+    $('.item-list-button').addClass('active');
+  });
+
+  $('.item-grid-button').on('click', function(){
+    $('.favorites__inner .product-item').removeClass('list');
+    $('.item-list-button').removeClass('active');
+    $('.item-grid-button').addClass('active');
+  });
+
   $('.bell-number__link').on('click', function(){
     $('.notifications__menu').slideToggle();
 
