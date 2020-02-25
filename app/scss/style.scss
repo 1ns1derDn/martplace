@@ -2191,8 +2191,7 @@
     font-weight: 500;
     line-height: 16px;
   }
-  .active,
-  span{
+  .active{
     background-color: #0674ec;
     color: #fff;
   }
@@ -2648,19 +2647,30 @@
 .aside-form{
   padding: 30px 25px 40px;
 }
-.aside-blog__item-title{
+.tabs{
   font-size: 20px;
   color: #0674ec;
   padding: 25px 25px;
   border-bottom: 1px solid #e8ebf0;
   width: 100%;
+  display: flex;
+  justify-content: space-between;
   span{
     color: #000;
-    margin-left: 50px;
+    display: block;
+    cursor: pointer;
+    &.active{
+      color: #0674ec;
+    }
   }
+  
 }
-.aside-blog__products{
+.tab-item{
   padding: 0 25px 10px;
+  display: none;
+  &.active-tab{
+    display: block;
+  }
 }
 .aside-product{
   display: flex;
@@ -2705,31 +2715,32 @@
   li{
     display: inline-block;
   }
-  a{
+  a,
+  span{
     padding: 0 12px;
     color: #0674ec;
     border-radius: 50px;
     background-color: #edf5fe;
     margin-bottom: 10px;
+    display: inline-block;
   }
-  .active,
   span{
+    background-color: #0674ec;
+    color: #fff;
+  }
+  .active{
     background-color: #0674ec;
     color: #fff;
   }
 }
 .aside-blog__banner{
-  background: rgb(79,39,151);
-  background: linear-gradient(90deg, rgba(79,39,151,1) 0%, rgba(53,51,186,1) 50%, rgba(22,66,229,1) 100%);
   max-width: 360px;
   height: 270px;
   width: 100%;
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
   border-radius: 4px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   color: #fff;
   font-size: 36px;
 }
