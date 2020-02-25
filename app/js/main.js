@@ -15,13 +15,35 @@ $(function(){
     appendArrows: $('.products-slider__btn'),
     arrows: true,
     slidesToShow: 3,
-    slidesToScroll: 1
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1151,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 751,
+        settings: {
+          slidesToShow: 1,
+        }
+      }
+    ]
   });
 
   $('.features-slider__inner').slick({
     appendArrows: $('.features-slider__btn'),
     arrows: true,
-    fade: true
+    fade: true,
+    responsive: [
+      {
+        breakpoint: 1051,
+        settings: {
+          dots: true
+        }
+      }
+    ]
   });
   
   $('.stars').rateYo({
