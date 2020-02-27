@@ -1,5 +1,23 @@
 $(function(){
 
+  $('.pages__title-1').on('click', function(){
+
+    $('.pages__col-first ul').slideToggle();
+
+  });
+
+  $('.pages__title-2').on('click', function(){
+
+    $('.pages__col-second ul').slideToggle();
+
+  });
+  
+  $('.pages__title-3').on('click', function(){
+
+    $('.pages__col-three ul').slideToggle();
+
+  });
+
   $('.wrapper .tab').on('click', function(event) {
     var id = $(this).attr('data-id');
       $('.wrapper').find('.tab-item').removeClass('active-tab').hide();

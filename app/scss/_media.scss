@@ -275,11 +275,14 @@
     left: 0;
     top: 80px;
     z-index: 2;
+    text-align: right;
     li{
       display: block;
-      text-align: center;
       background-color: #fff;
       border-bottom: 1px solid #0674ec;
+      ul{
+        text-align: left;
+      }
     }
     li + li{
       margin-left: 0;
@@ -603,17 +606,42 @@
     display: flex;
     justify-content: center;
   }
-  .menu__list{
-    .pages-off{
-      display: none;
+  .pages__menu-box{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #0674ec;
+    .pages__col-first{
+      max-width: 100%;
     }
-    li{
-      text-align: right;
-      padding: 0 10px;
+    .pages__col-second{
+      max-width: 100%;
+      ul{
+        max-width: 100%;
+        width: 100%;
+        columns: 2;
+      }
+    }
+    .pages__title{
+      max-width: 100%;
+      width: 100%;
+      cursor: pointer;
+    }
+    .pages__col-three{
+      max-width: 100%;
     }
   }
   .menu__btn{
     margin-right: 30px;
+  }
+  .pages__col-first, 
+  .pages__col-second, 
+  .pages__col-three{
+    ul{
+      display: none;
+    }
   }
 }
 @media(max-width: 680px){
@@ -846,6 +874,7 @@
   }
 }
 @media(max-width: 500px){
+  .pages__menu-box
   .feedback__title.title{
     margin-bottom: 10px;
   }
@@ -944,6 +973,26 @@
   }
 }
 @media(max-width: 420px){
+  .pages__col-first,
+  .pages__col-three{
+    ul{
+      columns: 1;
+      text-align: center;
+    }
+  }
+  .pages__title{
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    color: #333;
+    text-transform: uppercase;
+  }
+  .pages__menu-box .pages__col-second{
+    ul{
+      columns: 1;
+      text-align: center;
+    }
+  }
   .products__title.title{
     max-width: 190px;
     line-height: 30px;
@@ -1134,6 +1183,16 @@
 @media(min-width: 801px){
   .header-top__box-mobale{
     display: block !important;
+  }
+}
+
+@media(min-width: 761px){
+  .pages__col-first, 
+  .pages__col-second, 
+  .pages__col-three{
+    ul{
+      display: block !important;
+    }
   }
 }
 
