@@ -183,4 +183,7 @@ $(function(){
     to: 300,
     prefix: "$"
   });
+  
+  var mixer = mixitup('.products__inner');
+
 });

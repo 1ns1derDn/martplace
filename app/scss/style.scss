@@ -1045,6 +1045,9 @@
     padding-right: 20px;
     position: relative;
     color: #747b86;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
     &::after{
       content: "";
       width: 5px;
@@ -1072,13 +1075,27 @@
       cursor: pointer;
       margin-right: 5px;
       margin-bottom: 10px;
+      outline: none;
+      &.mixitup-control-active{
+        background-color: #0674ec;
+        color: #fff;
+      }
+      &:focus{
+        border: 1px solid #0674ec;
+      }
     }
   }
   &__inner{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
+    margin-left: -30px;
     flex-wrap: wrap;
+    .product-item{
+      flex-basis: calc(33.3333% - 30px);
+      margin-left: 30px;
+    }
   }
+
 }
 
 .product-item{

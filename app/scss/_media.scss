@@ -100,7 +100,34 @@
     width: 48%;
   }
 }
+@media(max-width: 1100px){
+  .products__inner{
+    .product-item{
+      max-width: 100%;
+      flex-basis: calc(50% - 30px);
+    }
+  }
+}
 @media(max-width: 1050px){
+  .features-slider{
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .products,
+  .advantage,
+  .feedback,
+  .news,
+  .support,
+  .banner{
+    padding: 40px 0;
+  }
+  .features{
+    padding-bottom: 40px;
+    padding-top: 120px;
+  }
+  .screen__inner{
+    margin-bottom: -80px;
+  }
   .features-slider__inner-content {
     flex-direction: column;
   }
@@ -475,6 +502,15 @@
   }
 }
 @media(max-width: 760px){
+  .products{
+    padding: 70px 0;
+  }
+  .products__inner{
+    .product-item{
+      max-width: 100%;
+      flex-basis: calc(100% - 30px);
+    }
+  }
   .support__inner{
     flex-direction: column;
     justify-content: center;
@@ -704,6 +740,39 @@
   }
 }
 @media(max-width: 580px){
+  .products{
+
+  }
+  .features-slider{
+    padding-bottom: 20px;
+  }
+  .products__down-btn{
+    margin-top: 0;
+  }
+  .products__box-btn{
+    padding: 10px;
+  }
+  .products__box-btn{
+    columns: 2;
+    button{
+      display: block;
+      max-width: 100%;
+      width: 100%;
+      margin-right: 0;
+    }
+  }
+  .products__box-title{
+    padding: 15px;
+  }
+  .products__title.title{
+    font-size: 24px;
+  }
+  .product-item__box{
+    margin-bottom: 20px;
+  }
+  .product-item__footer{
+    padding: 0 10px;
+  }
   .features-slider__inner-box.features-slider__info{
     padding: 10px 10px 0;
   }
@@ -875,6 +944,14 @@
   }
 }
 @media(max-width: 420px){
+  .products__title.title{
+    max-width: 190px;
+    line-height: 30px;
+  }
+  .products__filter{
+    padding-left: 0;
+    padding-right: 19px;
+  }
   .support__inner-title{
     font-size: 20px;
   }
@@ -968,6 +1045,7 @@
   }
 }
 @media(max-width: 370px){
+
   .news-item__text{
     text-align: justify;
   }
@@ -1024,6 +1102,11 @@
   }
 }
 @media(max-width: 360px){
+  .products__box-btn{
+    button{
+      font-size: 14px;
+    }
+  }
   .header-menu__form{
     input{
       padding-right: 60px;
