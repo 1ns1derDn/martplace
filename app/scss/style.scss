@@ -543,7 +543,11 @@
     color: #000;
     border-radius: 30px;
     border: 1px solid #898f96;
-
+    outline: none;
+    &:focus{
+      border: 1px solid #0674ec;
+      border-radius: 50px;
+    }
     &::placeholder{
       color: #898f96;
     }
@@ -560,8 +564,13 @@
     position: absolute;
     right: 0;
     top: 0;
+    outline: none;
     cursor: pointer;
     transition: all linear 0.1s;
+    &:focus{
+      border: 2px solid #62d03b;
+      border-radius: 50px;
+    }
     &:hover{
       width: 70px;
     }
@@ -715,6 +724,10 @@
       display: flex;
     }
     input{
+      &:focus{
+        border: 1px solid #0674ec;
+      }
+      position: relative;
       padding: 18px 25px;
       max-width: 805px;
       width: 100%;
@@ -734,6 +747,10 @@
       border-radius: 6px;
       color: #fff;
       margin-left: 30px;
+      outline: none;
+      &:focus{
+        border: 2px solid #62d03b;
+      }
     }
     select{
       outline: none;
@@ -896,6 +913,10 @@
       z-index: 1;
       cursor: pointer;
       fill: #fff;
+      outline: none;
+      &:focus{
+        border: 1px solid #62d03b;
+      }
     }
     .slick-prev{
       background-image: url(../img/features-slider/lnr-chevron-left.svg);
@@ -1209,6 +1230,11 @@
   cursor: pointer;
   display: block;
   margin-top: 30px;
+  outline: none;
+  &:focus{
+    padding: 18px 28px;
+    border: 2px solid #62d03b;
+  }
 }
 .jq-ry-container > .jq-ry-group-wrapper > .jq-ry-group > svg {
   stroke: orange;
@@ -1255,6 +1281,10 @@
       z-index: 1;
       cursor: pointer;
       fill: #fff;
+      outline: none;
+      &:focus{
+        border: 1px solid #62d03b;
+      }
     }
     .slick-prev{
       background-image: url(../img/features-slider/lnr-chevron-left.svg);
